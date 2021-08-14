@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html style="background: #0a0a0a">
+  <head>
+    <style>
+      body {
+        margin: auto;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        max-width: 100%;
+        max-height: 100%;
+        font-family: "courier new", monospace;
+        background: #0a0a0a;
+        word-wrap: break-word;
+      }
+      h1 {
+        font-family: "Courier new", "monospace";
+        color: #FF00F7;
+      } /* orange */
+      h2 {
+        font-family: "Courier new", "monospace";
+        color: #FF00F7;
+      } /* red */
+      p {
+        font-family: "Lucida Console", "Monaco", "monospace";
+        color: #ffffff;
+        text-align: left;
+        font-size: 20px;
+      } /* red */
+      ul {
+        font-family: "Lucida Console", "Monaco", "monospace";
+        color: #ffffff;
+        text-align: left;
+        font-size: 20px;
+      }
+      ol {
+        font-family: "Lucida Console", "Monaco", "monospace";
+        color: #ffffff;
+        text-align: left;
+        font-size: 20px;
+      }
+    dl { font-family: "Lucida Console", "monospace";
+    }
+      a:link {
+        color:#D6FF00
+        } /* pink */
+      a:hover {
+        color:#D6FF00
+        } /* yellow */
+      a:visited {
+        color:#00D6FF
+        } /* neon blue */
+      #para_sets {
+        text-align: left;
+        background-color: #3a7346;
+        width: 100%;
+      }
+      #navbar {
+            overflow: hidden;
+            background-color: #81007F;
+            z-index: 99;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        #nabbar_bottom {
+              overflow: hidden;
+              background-color: #81007F;
+              z-index: 99;
+              position: relative;
+              top: 0;
+              left: 0;
+              width: 120px;
+          }
+        @media (min-width: 64em) {
+          .row {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+          }
+        @media (prefers-reduced-motion: no-preference) {
+        @keyframes flash {
+        50% { opacity: 0; }
+      }
+        @keyframes reveal {
+        from { width: 2em; } /* Width of ::before */
+        to { width: 100%; }
+        }
+      #fancyboi {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: reveal 7s linear;
+        text-overflow: "█";
+      }
+      #fancyboi::after {
+        content: "█";
+        animation: flash 1s step-end infinite;
+      } /* animaiton accquired sourced from 'http://tilde.club/wiki/'*/
+    </style>
+    <title>Personal Information</title>
+  </head>
+  <body>
+    <h1 id="fancyboi">Personal Inforamtion</h1>
+    <div id="navbar">
+       <p> >>> <a href="02_it_interests.html">Interestes in IT</a> /// <a href="03_p_profile.html">Personal Profile</a> /// <a href="04_personal_info.html">Personal Inforamtion</a> /// <a href="01_ideal_job.html">Ideal Job</a> /// <a href="05_project_idea.html">Project Idea</a> </p>
+    </div>
+    <img src="images/profile_pic.jpg" alt="mug-shot abstract self-portrait" style="width: 500px; hight: auto; float: right;">
+    <h2>General Information:</h2>
+    <p><b style="color: #00ff36;">Name:</b> Liam Folie</p>
+    <p><b style="color: #00ff36;">Student ID:</b> S3605725</p>
+    <p><b style="color: #00ff36;">Student Email:</b> s3605725@student.rmit.edu.au</p>
+    <p><b style="color: #00ff36;">Nationality:</b> Australian</p>
+    <p><b style="color: #00ff36;">Education: </b>
+      <ul style="list-style-type:square;">
+        <li>2015 <b>AISM</b> - High School Certificate</li>
+        <li>2016 <b>AFTRS</b> - Diploma of Camera Fundamentals</li>
+        <li>2016 <b>AFTRS</b> - Diploma of Editing Fundamentals</li>
+        <li>2020 <b>RMIT</b> - Bachelor of Arts(Photography)</li>
+        <li>2021 <b>RMIT</b> - Bachelor of IT (current) </li>
+      </ul>
+    <h2>Who am I? </h2>
+      <p id="para_sets"> I grew up in South East Asia. Moved there when I was eight-years-old. Lived in a few different countries. Graduated highschool in Kuala Lumpur, Malaysia. The arts have always been a passion of mine but I was never a good drawer. This ineptitude led me down the path of embracing photography as my creative outlet of choice. Eventually, I learned the benefits of using various post-production programs to edit my images. I believe this is one of the primary reasons why I decided that I need to study IT.  The fact that IT is like an omnipresent force in our daily lives fascinates me. My desire to capture intriguing imagery has sparked a desire to not just observe and appreciate the results of the technology I use but to also understand it.</p>
+    <h2>Hobbies</h2>
+    <p id="para_sets">With all of that in mind, my hobbies include photography (obviously) and studying mandarin, and judo. I would define my photography style as leaning more on the experimental side of things. Bold saturated colours are what I am inspired by. My goal is to create imagery that you wouldn’t see in everyday life. You can check out my work on instagram <a href="https://www.instagram.com/foliepictorial/">here</a>.</p>
+    <p id="para_sets">I’ve been learning Mandarin off and on for the past 6 years. Since growing up in SEA I was always encouraged to study this language because China has a huge reach throughout that part of the world, and because of the obvious global influence that country has on China. The language and culture also intrigues me beyond the conventional reason for learning the language too. The writing system is fascinating and there is a lot of cultural and historic meaning to each Chinese character. </p>
+    <h2>Why did I choose RMIT?</h2>
+      <ol>
+          <li><b style="color: #00ff36;">Familiarity:</b> I’ve studied here before and had an awesome experience.</li>
+          <li><b style="color: #00ff36;">Lecturers:</b> They have all be awesome, with a few exceptions of course.</li>
+          <li><b style="color: #00ff36;">Facilities:</b> Great facilities...when we were in lockdown...and could use them...</li>
+          <li><b style="color: #00ff36;">Location:</b> The campus location is in the CBD, enough said. Also the campus is like Hogwarts labyrinth. I love the back alleyways that lead to variously unexpected entryways to the different buildings on campus. There are so many hidden gems. The architecture of all the buildings is so unique and distinctive. It's just a beautiful place if you have an eclectic personality.</li>
+      </ol>
+      <h2>Expectations for Course:</h2>
+      <p id="para_sets">To fulfill my goals for technological domination of the human race, why else? To clarify that is a joke. I love technology and want to understand an utilise it in a professional setting to become more than just the “user”. I hope to gain valuable skills that will increase my prospects of employability in a highly competitive job market.</p>
+    <div id="nabbar_bottom">
+      <p>>>> <a href="index.html">Home?</a></p>
+    </div>
+  </body>
+</html>
