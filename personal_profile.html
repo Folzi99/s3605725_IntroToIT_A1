@@ -6,9 +6,9 @@
       body {
         margin: auto;
         padding-top: 50px;
-        padding-right: 30px;
+        padding-right: 50px;
         padding-bottom: 50px;
-        padding-left: 80px;
+        padding-left: 50px;
         max-width: 100%;
         max-height: 100%;
         font-family: "courier new", monospace;
@@ -26,6 +26,7 @@
       p {
         font-family: "Lucida Console", "Monaco", "monospace";
         color: #ffffff;
+        text-align: left;
         font-size: 20px;
       } /* red */
       ul {
@@ -53,23 +54,29 @@
       } /* neon blue */
       #para_sets {
         text-align: left;
-        background-color: #3a7346;
         width: 100%;
+        font-family: "Lucida Console", "Monaco", "monospace";
+        color: #ffffff;
+        outline-style: outset;
+        outline-color: #FF00F7;
+        font-size: 20px;"
       }
       #navbar {
             overflow: hidden;
-            background-color: #81007F;
             z-index: 99;
             position: relative;
+            outline-style: dashed;
+            outline-color: #81007F;
             top: 0;
             left: 0;
             width: 100%;
         }
       #nabbar_bottom {
               overflow: hidden;
-              background-color: #81007F;
               z-index: 99;
               position: relative;
+              outline-style: dashed;
+              outline-color: #81007F;
               top: 0;
               left: 0;
               width: 120px;
@@ -109,10 +116,16 @@
   <body>
     <h1 id="fancyboi">Personal Profile</h1>
       <div id="navbar">
-         <p> >>> <a href="it_interests.html">Interests in IT</a> /// <a href="personal_profile.html">Personal Profile</a> /// <a href="personal_info.html">Personal Inforamtion</a> /// <a href="ideal_job.html">Ideal Job</a> /// <a href="project_idea.html">Project Idea</a> </p>
+         <p> >>> <a href="it_interests.html">Interests in IT</a> /// Personal Profile /// <a href="personal_info.html">Personal Inforamtion</a> /// <a href="ideal_job.html">Ideal Job</a> /// <a href="project_idea.html">Project Idea</a> </p>
       </div>
-    <h2 style="font-size: 30px; color: #fc8405;">Insights From Various Personality Tests:</h2>
-    <p style="text-align: center; font-size: 30px"><b style="color: #00ff36;">Myers Briggs</b></p>
+    <h2 style="font-size: 30px; color: #00ff36;">Insights From Various Personality Tests:</h2>
+    <h2>What do the results of these tests mean for you?</h2>
+    <p id="para_sets">The results of these tests are cautiously relatable. I attempted to answer the questions as truthfully as possible and I do believe, to some extent, that there is some truth to these questionnaires. However, my understanding is that the validity of these tests is highly debated amongst the broader scientific community. I think from a distance these results can offer insight into our own character but I also believe that reading a horoscope would serve a similar purpose. Although, I do believe that they can provide insight into new terminology to help individuals/business determine what life/working style choice might lead to better satisfaction. I also don’t believe it's fair to assume that personality is linear, as we experience certain things in life and grow older, our perceptions and personality would change. What I found interesting from the Myers Briggs test is that when I took it several years ago my personality type was in a different category. I think these results only offer a snapshot of who we are at a particular moment in time.</p>
+    <h2>How do you think these results may influence your behaviour in a team?</h2>
+    <p id="para_sets">I don't believe basing my decisions and interactions on these results alone, would significantly impact my behaviour in a team. If I were in a team, I think sharing our results, in a team building exercise, and acknowledging that these results are not the be-all-and-end-all of each individual can allow us to learn more about each other and develop a strong relationship.</p>
+    <h2>How should you take this into account when forming a team?</h2>
+    <p id="para_sets">Having an understanding of these various results can help determine what role I may be more suited for in a team. However, I don’t think the results should constrain me to one style of working if I feel I have the capability to transition to something else.</p>
+    <h2>Myers Briggs</h2>
     <img src="images/myers_b_01.jpg" alt="profile of architect" style="width: 200px; hight: auto;" class="center">
     <img src="images/personality_traits.jpg" alt="profile of architect" style="width: 700px; hight: auto;" class="center">
     <p style="text-align: left;" id="para_sets">
@@ -124,15 +137,13 @@
     <br>- From the <a hrf="https://www.16personalities.com/intj-personality">Architect</a> gernal profile page.<br>
     <br>You can view the full results <a href="https://www.16personalities.com/profiles/249b5223674fa">here</a>.
     </p>
-
-    <p style="text-align: center; font-size: 30px"><b style="color: #00ff36;">What's your learning style? </b></p>
-    <p src="images/myers_b_01.jpg" id="para_sets"> Accoding to the self-assessment from <a href="http://www.educationplanner.org/students/self-assessments/learning-styles-styles.shtml"> EducationPlanner.org</a> I'm a <i>VISUAL</i> learner!<br>
+    <h2>What's your learning style?</h2>
+    <p src="images/myers_b_01.jpg" id="para_sets"> Accoding to the self-assessment from <a href="http://www.educationplanner.org/students/self-assessments/learning-styles-styles.shtml"> EducationPlanner.org</a>, I'm a <i>VISUAL</i> learner!<br>
       <br>Auditory: 30%
       <br>Visual: 60%
       <br>Tactile: 10% </br>
-      <br> "If you are a visual learner, you learn by reading or seeing pictures. You understand and remember things by sight. You can picture what you are learning in your head, and you learn best by using methods that are primarily visual. You like to see what you are learning. As a visual learner, you are usually neat and clean. You often close your eyes to visualize or remember something, and you will find something to watch if you become bored. You may have difficulty with spoken directions and may be easily distracted by sounds. You are attracted to color and to spoken language (like stories) that is rich in imagery."
-</p>
-    <p style="text-align: center; font-size: 30px"><b style="color: #00ff36;">Big Five</b></p>
+      <br> "If you are a visual learner, you learn by reading or seeing pictures. You understand and remember things by sight. You can picture what you are learning in your head, and you learn best by using methods that are primarily visual. You like to see what you are learning. As a visual learner, you are usually neat and clean. You often close your eyes to visualize or remember something, and you will find something to watch if you become bored. You may have difficulty with spoken directions and may be easily distracted by sounds. You are attracted to color and to spoken language (like stories) that is rich in imagery." </p>
+    <h2>Big Five</h2>
     <img src="images/big_5.jpg" alt="profile of architect" style="width: 800px; hight: auto;" class="center">
     <p id="para_sets"> <i style="color: #0253ea;">Neuroticism</i> refers to the tendency to experience negative feelings.
       <br><i style="color: #02ea0a;">Extraversion</i> is marked by pronounced engagement with the external world.
@@ -141,9 +152,8 @@
       <br><i style="color: #010184;">Conscientiousness</i> concerns the way in which we control, regulate, and direct our impulses.<br>
       <br>You can view detailed results from the Big Five test <a href="https://bigfive-test.com/result/610529a1ec5ed80009261c8e">here</a>!
     </p>
-
     <div id="nabbar_bottom">
-      <p>>>> <a href="index.html">Home?</a></p>
+      <p> >>> <a href="index.html">Home?</a></p>
     </div>
   </body>
 </html>
