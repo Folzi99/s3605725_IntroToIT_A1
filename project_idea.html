@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html style="background: #0a0a0a">
+  <head>
+    <title>Project Idea</title>
+    <style>
+      body {
+        margin: auto;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        max-width: 100%;
+        max-height: 100%;
+        font-family: "courier new", monospace;
+        background: #0a0a0a;
+        word-wrap: break-word;
+      }
+      h1 {
+        font-family: "Courier new", "monospace";
+        color: #FF00F7;
+      } /* orange */
+      h2 {
+        font-family: "Courier new", "monospace";
+        color: #FF00F7;
+      } /* red */
+      p {
+        font-family: "Lucida Console", "Monaco", "monospace";
+        color: #ffffff;
+        text-align: left;
+        font-size: 20px;
+      } /* red */
+      ul {
+        font-family: "Lucida Console", "Monaco", "monospace";
+        color: #ffffff;
+        text-align: left;
+        font-size: 20px;
+      }
+      ol {
+        font-family: "Lucida Console", "Monaco", "monospace";
+        color: #ffffff;
+        text-align: left;
+        font-size: 20px;
+      }
+      dl{ font-family: "Lucida Console", "monospace";
+    }
+      a:link {
+        color:#D6FF00
+        } /* pink */
+      a:hover {
+        color:#D6FF00
+        } /* yellow */
+      a:visited {
+        color:#00D6FF
+        } /* neon blue */
+      #para_sets {
+        text-align: left;
+        background-color: #3a7346;
+        width: 100%;
+      }
+      #navbar {
+            overflow: hidden;
+            background-color: #81007F;
+            z-index: 99;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+      #nabbar_bottom {
+              overflow: hidden;
+              background-color: #81007F;
+              z-index: 99;
+              position: relative;
+              top: 0;
+              left: 0;
+              width: 120px;
+          }
+        @media (min-width: 64em) {
+          .row {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+          }
+        @media (prefers-reduced-motion: no-preference) {
+        @keyframes flash {
+        50% { opacity: 0; }
+      }
+        @keyframes reveal {
+        from { width: 2em; } /* Width of ::before */
+        to { width: 100%; }
+        }
+      #fancyboi {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: reveal 7s linear;
+        text-overflow: "█";
+      }
+      #fancyboi::after {
+        content: "█";
+        animation: flash 1s step-end infinite;
+      } /* animaiton accquired sourced from 'http://tilde.club/wiki/'*/
+    </style>
+  </head>
+  <body>
+    <h1 id="fancyboi">Project Idea</h1>
+    <div id="navbar">
+       <p> >>> <a href="02_it_interests.html">Interestes in IT</a> /// <a href="03_p_profile.html">Personal Profile</a> /// <a href="04_personal_info.html">Personal Inforamtion</a> /// <a href="01_ideal_job.html">Ideal Job</a> /// <a href="05_project_idea.html">Project Idea</a> </p>
+    </div>
+    <h2>Goal</h2>
+    <p>“Create a desktop application with the purpose to create “Glitch” based imagery with ease.”
+    <br>My project idea is to create some kind of software that gives users specific control over “glitching” images. Basically something to corrupt the image file so it can create some interesting abstract art. There are plenty of mobile apps that can do this but their features are limited and you can’t export high res file formats. You could argue photoshop can do this but I’ve found that unless you know what you want the outcome to be, the results won’t be the same. My intention is to take an open source program like audacity, which edits audio files, and turn it into a program that is designed specifically for creating “glitched” images. There's some additional theory as to why this could work, which I would include in my project description. </p>
+    <h2>Reason</h2>
+    <p>There are already a number of mobile apps that allow you to glitch work but the interfaces are limited, the formatting for file importing and exporting is basic. And there are limited tools that can be used to create specific effects.</p>
+    <h2>Overview</h2>
+    <p>What is glitch art?
+      <br> Glitch art is a visual style characterized by using digital or analog errors for aesthetic purposes, whether that be intentional (that is, “faking glitch” and obtaining a similar aesthetic through design) or by accident (a true manifestation inside of the system without human intervention). (Colette Pomerleau, 2019, 99designs) </p>
+      <p>What is audacity?
+        <br>Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. The interface is translated into many languages. Here are a few key features of Audacity: </p>
+      <ul>
+        <li>Record live audio</li>
+        <li>Edit WAV, AIFF, FLAC, MP2, MP3, Ogg Vorbis sound files.</li>
+        <li>Edit WAV, AIFF, FLAC, MP2, MP3, Ogg Vorbis sound files.</li>
+        <li>Cut, copy, splice or mix sounds together.</li>
+        <li>Numerous effects including change the speed, pitch or tempo of a recording.</li>
+      </ul>
+    <h2>Why can’t you just use photoshop/gimp/affinity photo?</h2>
+      <p>I am an avid photographer who has used a number of applications such as Adobe Photoshop, Gimp, Affinity Photo, and other programs. These tools are incredible and my goal is not to replicate and repackage these ideas. These high-end image manipulation tools have the ability to make specific alterations. However, they lack the functionality to create “randomness”. </p>
+    <h2>Motivation</h2>
+    <p>There are a number of ways to create glitch art. Whether it be an accidental creation of corrupt files. Or use the tools that these other programs offer to produce meticulously crafted images. What I have found from my personal journey of experimental photography is that the excitement from creating glitch art comes from the spontaneity of “corrupting” the data from digital image files to produce something unexpectedly beautiful.
+    <br>The struggle with this process is that there is no easy process to create this kind of art without having some technical understanding of how it works. I think understanding these technical aspects is beautiful and rewarding in itself. But for a lot of people, this can be a barrier.
+    <br> Current drawbacks of glitching images with audacity is that it is a long arduous process:</p>
+    <ul>
+      <li>Convert your image to TIFF</li>
+      <li>Import into Audacity as raw data (using A-Law)</li>
+      <li>Apply sound effects, such as reverb</li>
+      <li>Export as raw data (using A-Law)</li>
+      <li>Open the exported image as TIFF</li>
+    </ul>
+    <h2>Descritpion</h2>
+    <p>The features of the product:
+      <br>Importing and Exporting capabilities:<br>
+      Import jpegs into the program
+      Export files in image formats, such as TIFF, JPEG</p>
+    <h2>Tools and Technologies</h2>
+    <p>What do we need?
+      <br>Source Code of Audacity: https://github.com/audacity
+      <br>Source Code of Gimp:https://www.gimp.org/source/
+      <br>How will it work?
+      <br>It manipulates the data of an image file by converting it into an audio file which enables the user to alter the image by: Copying and pasting segments of the audio file in other places Apply various audio “effects” to the audio file which result in different “glitches”. The user then exports the file and they can select the image format they wish to have it reformatted back into.
+    </p>
+    <h2>Challenges:</h2>
+    <p>Audacity does not understand Tiff (or bmp, or any other image format), so you would need to handle those conversions outside of Audacity (for example, in Python). Audacity does not currently have a Macro command for "Import RAW" or "Export RAW".
+      <br>Some possible ways that could be solved:
+      <br> Modify the Audacity C++ and create these two Macro / Scripting commands
+      Write a pair of Nyquist plug-ins to perform binary read / binary write
+      Use an external scripting language (Python) to add RIFF headers to you data files before importing and then strip them off again after exporting (https://forum.audacityteam.org/viewtopic.php?t=111451)
+    <br>Is it efficient? Can other programs do this already?
+    <br>Is it user friendly?
+    <br>Commercial viability? Do you want to make money? Can you make money when you take the open-source code and repackage as your own?
+   </p>
+   <h2>Skills Required</h2>
+   <p>Do I have the skill to create this right now? What skills are required? How do I plan on gaining those skills? Understanding the formula of each effect in audacity.
+     <br>Programing Languages required for Audacity (based on Audacity github repos): Python, C++, C, Shell, Makefile, HTML
+     <br>Programing Languages required for GIMP (based on information from: https://opensource.com/article/21/1/gimp-scripting): Python Scheme ⇒ Script-Fu (language built into GIMP)</p>
+    <h2></h2>
+    <p>If the project is successful, what will be the outcome?
+    <br>The outcome would be a user-friendly focused program that allows individuals to explore and pursue their creative endeavours.
+    <br>How will the original problem be solved?
+    <br>The original problem will be solved by streamlining the process of databending images that can enable greater accessibility to non-tech-savvy individuals.
+    <br>What is the expected impact this program will have?
+    <br>This development will have an impact on the broader community by enabling them greater accessibility to explore and create imagery that has been databended and also possibly inspire a thirst for knowledge to learn and understand more about how digital images work. </p>
+  </body>
+</html>
