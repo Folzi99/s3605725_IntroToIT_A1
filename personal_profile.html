@@ -22,6 +22,7 @@
       h2 {
         font-family: "Courier new", "monospace";
         color: #FF00F7;
+        font-size: 28px;
       } /* red */
       p {
         font-family: "Lucida Console", "Monaco", "monospace";
@@ -34,7 +35,16 @@
         color: #ffffff;
         text-align: left;
         font-size: 20px;
+        list-style-type:square;
       }
+      ul li::before {
+        content: "\2022";
+        color: #00ff36;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        }
       ol {
         font-family: "Lucida Console", "Monaco", "monospace";
         color: #ffffff;
@@ -126,8 +136,6 @@
     <h2>How should you take this into account when forming a team?</h2>
     <p id="para_sets">Having an understanding of these various results can help determine what role I may be more suited for in a team. However, I don’t think the results should constrain me to one style of working if I feel I have the capability to transition to something else.</p>
     <h2>Myers Briggs</h2>
-    <img src="images/myers_b_01.jpg" alt="profile of architect" style="width: 200px; hight: auto;" class="center">
-    <img src="images/personality_traits.jpg" alt="profile of architect" style="width: 700px; hight: auto;" class="center">
     <p style="text-align: left;" id="para_sets">
       <b>INTJ:</b> Architect<br>
       <b>Role:</b> Analyst<br>
@@ -137,6 +145,8 @@
     <br>- From the <a hrf="https://www.16personalities.com/intj-personality">Architect</a> gernal profile page.<br>
     <br>You can view the full results <a href="https://www.16personalities.com/profiles/249b5223674fa">here</a>.
     </p>
+    <img src="images/myers_b_01.jpg" alt="profile of architect" style="width: 200px; hight: auto;" class="center">
+    <img src="images/personality_traits.jpg" alt="profile of architect" style="width: 700px; hight: auto;" class="center">
     <h2>What's your learning style?</h2>
     <p src="images/myers_b_01.jpg" id="para_sets"> Accoding to the self-assessment from <a href="http://www.educationplanner.org/students/self-assessments/learning-styles-styles.shtml"> EducationPlanner.org</a>, I'm a <i>VISUAL</i> learner!<br>
       <br>Auditory: 30%

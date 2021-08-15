@@ -22,6 +22,7 @@
       h2 {
         font-family: "Courier new", "monospace";
         color: #FF00F7;
+        font-size: 28px;
       } /* red */
       p {
         font-family: "Lucida Console", "Monaco", "monospace";
@@ -34,10 +35,19 @@
         color: #ffffff;
         text-align: left;
         font-size: 20px;
+        list-style-type:square;
       }
+      ul li::before {
+        content: "\2022";
+        color: #00ff36;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        }
       ol {
         font-family: "Lucida Console", "Monaco", "monospace";
-        color: #ffffff;
+        color: #00ff36;
         text-align: left;
         font-size: 20px;
       }
@@ -114,69 +124,166 @@
     </div>
     <h2 style="font-size: 30px; color: #00ff36;">The Project<h2>
     <h2>Overview</h2>
-    <p id=para_sets> What is glitch art?
-      <br> Glitch art is a visual style characterized by using digital or analog errors for aesthetic purposes, whether that be intentional (that is, “faking glitch” and obtaining a similar aesthetic through design) or by accident (a true manifestation inside of the system without human intervention). (Colette Pomerleau, 2019, 99designs) </p>
-      <p  style="outline-style: outset; outline-color: #FF00F7">What is audacity?
-        <br>Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. The interface is translated into many languages. Here are a few key features of Audacity: </p>
-      <ul>
-        <li>Record live audio</li>
-        <li>Edit WAV, AIFF, FLAC, MP2, MP3, Ogg Vorbis sound files.</li>
-        <li>Edit WAV, AIFF, FLAC, MP2, MP3, Ogg Vorbis sound files.</li>
-        <li>Cut, copy, splice or mix sounds together.</li>
-        <li>Numerous effects including change the speed, pitch or tempo of a recording.</li>
-      </ul>
+    <br>
+      <center>
+      <img src="images/glitch1.jpg" alt="glitched image 1" style="height:600px;">
+      <img src="images/glitch5.jpg" alt="glitched image 5" style="height:600px;">
+      <img src="images/glitch2.jpg" alt="glitched image 2" style="height:600px;">
+      </center>
+    <br>
+    <p id="para_sets"> <b style="color:#D6FF00">What is glitch art?</b>
+      <br>
+      <br> The style of glitch art can be defined as utlizing digital and analogue erros for aestheitc purposes. These glitches can be intentioal through certain design/image maniplation techniques or they can be accidental. The later of these two processes is what definies the art style, data that has been corrupted without humann intervention. An image file is just information that is processed by a computer to present the output of colour on a monitor. Understaning this convention we do some intersting things. Since an images is just data, the process of creating glitch art is essantily databending. Databending is a term which indicates the maniuplation of media files of certain format and then converting and editing them in a software deisgned for other file types.</p>
     <h2>Goal</h2>
-    <p id=para_sets> “Create a desktop application with the purpose to create “Glitch” based imagery with ease.”
-    <br>My project idea is to create some kind of software that gives users specific control over “glitching” images. Basically something to corrupt the image file so it can create some interesting abstract art. There are plenty of mobile apps that can do this but their features are limited and you can’t export high res file formats. You could argue photoshop can do this but I’ve found that unless you know what you want the outcome to be, the results won’t be the same. My intention is to take an open source program like audacity, which edits audio files, and turn it into a program that is designed specifically for creating “glitched” images. There's some additional theory as to why this could work, which I would include in my project description. </p>
+      <p id=para_sets><b style="color:#D6FF00">“I want to create a desktop application with the purpose to create “glitched” imagery with user ease in mind.”</b>
+      <br>
+      <br> My project goal is to create some kind of software that gives users specific control over “glitching” images. Basically something to corrupt the image file so it can create some intrguing and abstract art. There are plenty of mobile apps that claim they can do this but their features are limited and act more or less as filters, they also have limited control over the glitches, which limit users ability to experiment and create unique work, they also lack the capability to export high resolutoin image file formats.
+      <br>
+      <br> You could argue that programs like Adobe Photoshop/Affinity Photo/GIMP can already do what I want to create. You wouldn't be wrong. Those tools have increadible tools to control and produce altered images. However, as an avid user of thise tools, I’ve found that unless you know exactly what you want your outcome to be, while also follwoing a number steps to get there, the results are not the same. The refined control those programs offer users is exceptional but they have too much control. They lack the "randomness" of glitch art, which at its core is just a file that has had its data corrupted, I'll expand this idea later.
+      <br>
+      <br>My intention for this project is to take an open source program like audacity, which edits audio files, and turn it into a program that is designed specifically for creating “glitched” images. I'll elaborate more on this in a moment but firsts lets acsertain a general over view of this two programs.</p>
+      <p  style="outline-style: outset; outline-color: #FF00F7"><b style="color:#D6FF00">What is <a href="https://www.audacityteam.org/about/"> Audacity?</a></b>
+        <br><img src="images/audacity-logo.png" alt="audacity logo" style="width:100px;height:auto;">
+        <br>"Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. The interface is translated into many languages."</p>
+      <p><b style="color:#00ff36">Here are a few key features of  Audacity:</b></p>
+        <ul>
+          <li>Record live audio</li>
+          <li>Edit WAV, AIFF, FLAC, MP2, MP3, Ogg Vorbis sound files.</li>
+          <li>Edit WAV, AIFF, FLAC, MP2, MP3, Ogg Vorbis sound files.</li>
+          <li>Cut, copy, splice or mix sounds together.</li>
+          <li>Numerous effects including change the speed, pitch or tempo of a recording.</li>
+        </ul>
+      <p style="outline-style: outset; outline-color: #FF00F7"><b style="color:#D6FF00">What is <a href="https://www.gimp.org/about/">GIMP?</a></b>
+        <br><img src="images/gimp.jpg" alt="gimp logo" style="width:100px;height:auto;">
+        <br>"GIMP is an acronym for GNU Image Manipulation Program. It is a freely distributed program for such tasks as photo retouching, image composition and image authoring."</p>
     <h2>Reason</h2>
-    <p id=para_sets> There are already a number of mobile apps that allow you to glitch work but the interfaces are limited, the formatting for file importing and exporting is basic. And there are limited tools that can be used to create specific effects.</p>
-
-    <h2>Why can’t you just use photoshop/gimp/affinity photo?</h2>
-    <p id=para_sets> I am an avid photographer who has used a number of applications such as Adobe Photoshop, Gimp, Affinity Photo, and other programs. These tools are incredible and my goal is not to replicate and repackage these ideas. These high-end image manipulation tools have the ability to make specific alterations. However, they lack the functionality to create “randomness”. </p>
+      <p id=para_sets><b style="color:#D6FF00">Why is this idea different?</b>
+        <br>I am an avid photographer who has used a number of programs to edit photos. My goal is not to replicate and repackage these exisiting products. My intention is to create a high-end image manipulation tool that has the ability to make specific alterations while also providingt the user with the excitment of create "randomness" in their databended imagery. What seperates this progam from others is that you won't have to follow a series of steps form a tutorial on youtube to figure out how to do one specific thing.
+        <br>
+        <br>I want users to be able to take various tools used to edit audio files and experiemnt to see what images they can make with various effects applied. I don't want people to try an replicate glitch art in existing photo editing programs by appling filters, I want people to creat glitch images by actually manipulating the data.</p>
+    <center>
+      <img src="images/before-glitch3.jpg" alt="before glitched image" style="height:600px;" title="Before Glitch Editing">
+      <img src="images/glitch3.jpg" alt="after glitched image" style="height:600px;" title="After Glitch Editing">
+    </center>
     <h2>Motivation</h2>
-    <p id=para_sets> There are a number of ways to create glitch art. Whether it be an accidental creation of corrupt files. Or use the tools that these other programs offer to produce meticulously crafted images. What I have found from my personal journey of experimental photography is that the excitement from creating glitch art comes from the spontaneity of “corrupting” the data from digital image files to produce something unexpectedly beautiful.
-    <br>The struggle with this process is that there is no easy process to create this kind of art without having some technical understanding of how it works. I think understanding these technical aspects is beautiful and rewarding in itself. But for a lot of people, this can be a barrier.
-    <br> Current drawbacks of glitching images with audacity is that it is a long arduous process:</p>
-    <ul>
-      <li>Convert your image to TIFF</li>
-      <li>Import into Audacity as raw data (using A-Law)</li>
-      <li>Apply sound effects, such as reverb</li>
-      <li>Export as raw data (using A-Law)</li>
-      <li>Open the exported image as TIFF</li>
-    </ul>
-    <h2>Descritpion</h2>
-    <p id=para_sets> The features of the product:
-      <br>Importing and Exporting capabilities:<br>
-      Import jpegs into the program
-      Export files in image formats, such as TIFF, JPEG</p>
+      <p id=para_sets> There are various ways to glitch images. Whether it be an accidental creation of corrupt files, opening the file as text and playing around there, or even using the tools that these other programs offer to produce meticulously crafted images. What I have learned through my own journey with experimental photography is that the excitement from creating glitch art comes from the spontaneity of “corrupting” the data from digital image files by using an audio editing program, like audacity, to data bend an image file to produce something unexpectedly beautiful.
+      <br>
+      <br>The struggle with this process is that there is no easy to do this without a technical understanding of how it works. I think understanding these technical aspects is beautiful and rewarding in itself. But for a lot of people who don't want to spend their waking hours learning software development, this can be a barrier. This is why I am motivated to create this program, to make glitch art more accessible. Also becuase I am sick of the process my self and want to streamline it for my own <!--possibly selfish-->  needs. The processes is also a little tedious and if you don't follow the steps correctly you it might not work.</p>
+        <p><b style="color:#00ff36"> Creating glitch art in audacity is a process that involves converting the imgae file three times as follows:
+          <br>
+          <br>Image -> Audio -> Image</b>
+          <br>
+          <br> Here is the process of glitch images in Audacity:</p>
+          <ol>
+
+          <ol>
+            <li><span style='color:white;'> OPEN YOUR IMAGE FILE IN PHOTOSHOP -> SAVE AS -> TIFF -> IN THE DIALOGUE BOX MAKE SURE “PIXEL ORDER” IS SELECTED AS “PER CHANNEL” -> OK</li>
+            <br>
+            <li><span style='color:white;'> IN AUDACITY -> FILE -> NEW</li>
+            <br>
+            <li><span style='color:white;'> FILE -> IMPORT -> RAW DATA -> FIND AND SELECT THE TIFF FILE THAT YOU JUST SAVED</li>
+            <br>
+            <li><span style='color:white;'> IN THE DIALOGUE BOX: ENCODING -> SELECT “U-LAW’ , BYTE ORDER -> SELECT “BIG-ENDIAN” -> IMPORT</li>
+            <br>
+            <li><span style='color:white;'> YOU NOW HAVE AN AUDIO FILE FROM YOU IMAGE FILE, MAKE ADJUSTMENTS WITH AUDIO FILTERS AND EFFECTS, BUT BE SURE TO LEAVE THE FIRST SECTION ALONE (it it the image header and if you mess with  this the image won't open - it will look a little different then the rest of the audio file)</li>
+            <br>
+            <li><span style='color:white;'> FILE -> EXPORT -> FORMAT: OTHER UNCOMPRESSED FILES -> SELECT “OPTIONS”, HEADER: “RAW (HEADER-LESS), ENCODING: “U-LAW” -> OK</li>
+            <br>
+            <li><span style='color:white;'> IN THE SAVE AS SECTION, WRITE IN THE EXTENSION “.bmp” -> SAVE</li>
+            <br>
+            <li><span style='color:white;'> A WARNING BOX POPS UP, SELECT -> “YES”, THEN A META DATA BOX POPS UP, SELECT -> “OK”</li>
+          </ol>
+        <p>Full credit to this tutorial needs to go to <a href="https://questionsomething.wordpress.com/2012/07/26/databending-using-audacity-effects/">Question Something</a> for compling this tutorial, which has become my bible for this entire process.
+          <br>Even though this process has been eleganly compiled by this artist, the process is extemely tedious!</p>
+    <h2>Description</h2>
+    <p id=para_sets> <b style="color:#D6FF00">The features of the product.</b>
+      <br>Aside from the standard features we expect nowadways from any program (such as AutoSave and copy/paste), I have specific features I want this program to have which will aid in the streamlining of creating glitch art. These ideas are by no means "new" or "groundbreackng", they are simply features I know users would want and need inorder to utilise this program with ease and remove any headaches that may arise with out them. </p>
+      <p><b style="color: #00ff36;"> I want these three steps don in the program Image -> Audio -> Image</b></p>
+        <ul style="list-style-type:square;">
+          <li>Why? Beause it streamlines the converion of files which increases the users speed. This means the user can:</li>
+            <ul>
+              <li>Import jpegs into the program</li>
+              <li>Have those files converted into TIFF</li>
+              <li>Export files to TIFF rather than .bmp (becuase TIFF files are a standard high-resolution image file)</li>
+            </ul>
+        </ul>
+    <p><b style="color: #00ff36;">Tools AND Effects to glitch images</b></p>
+      <ul style="list-style-type:square;">
+        <li>This program wouldn't be much use if there were no tools to maipulate the images so we will need:</li>
+          <ul>
+            <li>There are a varitey of audio effects that will need to be included as they all provide unique results. They inlude: Amplify, Audo Duck, Bass Boost, Change Pitch, Change Tempo/Speed, Compressor, Echo, Equalization, Fade In/Fade Out, Invert, Noise Removal, Normalize, Phaser, Repair, Repeat, Reverse, High Pass, Low Pass, Delay...
+              <br> You can see all the results from on <a href="https://questionsomething.wordpress.com/2012/07/26/databending-using-audacity-effects/">Question Something's</a> tutotial</li>
+            <li>It goes without saying but copy and paste is an absoulte necessity, both programs already contain this feature so should be easy to intergrate.</li>
+          </ul>
+      </ul>
+      <p><b style="color: #00ff36;">Conversion of image files to audio formats</b></p>
+        <ul style="list-style-type:square;">
+          <li>The software imports and converts image files to audio for the editing process. If the user has a button they can press that automates this process that would elimnate more time spent in file converrion.
+          </li>
+        </ul>
+      <p><b style="color: #00ff36;">Preview Mode</b></p>
+        <ul style="list-style-type:square;">
+          <li>This feature enables the user to observe the results while making "glitches" so the don't have to export everytime they want to see results</li>
+        </ul>
+        <p><b style="color: #00ff36;">Dark and Light Modes</b></p>
+          <ul style="list-style-type:square;">
+            <li>I think this title is rather self-explanitory. Althought I think it is something that is taken for granted nowadays. I remeber when this kind of feature wasn't readily availble. I hate pages with bright coloured backgrounds (if you couldn't tell from my website). I find the bright light can strain my eyes easily and cause a lot of glare. So by having a simple, yet incredibly benifical to user experince, feature that enables the users to adjust colours of the interface, I believe, would greatly satisfy the enjoyability of using the program. Especially when it comes to photo manipulation. I don't want to get overly technical but colour is perceptiual so when you can make a background dark in a photo editing program, it can help produce more consistent colours desired by the user. </li>
+          </ul>
+      <p><b style="color: #00ff36;">Adding metadata</p>
+          <ul style="list-style-type:square;">
+            <li> This gives the user the ability to add detials to the images such as copyright</li>
+          </ul>
+      <p><b style="color: #00ff36;">Help Guide</b></p>
+      <ul style="list-style-type:square;">
+        <li>I'm unsure if this would be considerd a 'feature' but I believe it would be benifical to inculde an option for users to have a built in guide or usermanual that can be used to optimize their search for understanding how to use the program effecively.</li>
+      </ul>
     <h2>Tools and Technologies</h2>
-    <p id=para_sets> What do we need?
-      <br>Source Code of Audacity: https://github.com/audacity
-      <br>Source Code of Gimp:https://www.gimp.org/source/
-      <br>How will it work?
-      <br>It manipulates the data of an image file by converting it into an audio file which enables the user to alter the image by: Copying and pasting segments of the audio file in other places Apply various audio “effects” to the audio file which result in different “glitches”. The user then exports the file and they can select the image format they wish to have it reformatted back into.
+    <p id=para_sets> <b style="color:#D6FF00">What do we need?</b>
+      <br>
+      <br>We don't neccesarily have to build a program from the ground up. Audacity and GIMP are open source programs, the source code can be found easily on line. We can take those files, cherry pick the code we need and merge them into our own program. Which would hopefully elimnate hours/days of coding.
+      <br>
+      <br><a href="https://github.com/audacity">Source Code of Audacity</a>
+      <br><a href="https://www.gimp.org/source/">Source Code of Gimp</a>
+      <br>
+      <br>Once we have the code we will then need a platform to build our own on, so we will need a text editing program like Atom, which is desigend specifically for coding. Rather than using something Vanila like notpad, Atom will help with the readability of the progam during the coding process. It has many features but the primary one is that it is intergrated with Github. This will make it sufficently easier to make commits to the code and by sharinging it publicly on Github other programmers can assess the code and provide valuble feedback.
     </p>
     <h2>Challenges:</h2>
-    <p id=para_sets> Audacity does not understand Tiff (or bmp, or any other image format), so you would need to handle those conversions outside of Audacity (for example, in Python). Audacity does not currently have a Macro command for "Import RAW" or "Export RAW".
-      <br>Some possible ways that could be solved:
-      <br> Modify the Audacity C++ and create these two Macro / Scripting commands
-      Write a pair of Nyquist plug-ins to perform binary read / binary write
-      Use an external scripting language (Python) to add RIFF headers to you data files before importing and then strip them off again after exporting (https://forum.audacityteam.org/viewtopic.php?t=111451)
-    <br>Is it efficient? Can other programs do this already?
-    <br>Is it user friendly?
-    <br>Commercial viability? Do you want to make money? Can you make money when you take the open-source code and repackage as your own?
+    <p id=para_sets><b style="color:#D6FF00">I anticipate many challanges of which I won't know how to resolve...yet.</b>
+      <br>Knowledge is key and knowlwege in programing is what I lack. To overcome thi hurdel I will need to undertstand how to write and read various coding languages. There is also the hurdle of learing how these various scripts will interact with eachother.
+      <br>I also anticipate there being challanging with creating a live preview mode as the files edited in Audacity sound files, so that would require some kind of in program converion of the file back to an image so it can be displayed to the user while they apply various "glitches".
+      <br>There will also be the challange of creating a function that imports the digital file, regardless of the original image format, into an audio file so it can be edited. On that note I would expect challanges with the exporting process but for the reveres process.
+      <br>Another challnge is how efficient the program would be at perfoming all these conversions. I know it can be done but if it takes too long the conversion feature may be redundent, speed will be key.
+      <br>Like any high-end editng program, there will be some assumed knowledge involved with using this as a tool to manipulate image files. What I think would be a challange is to translate the more complex side of what is actually happening and have it appear more user-friendly. I think this could be resolved by seeing what terms/theory overlap between photography and music and implement those key words that have asssocaited meaning, rather than create 'new terms', I'm not trying to be Apple.
+      <br>
+    <br><b style="color:#D6FF00">Commercial viability? Do you want to make money?</b>
+    <br>These are challanging questions are something I have contemplated deeply. My respones; I don't care about commercial viability. The intention of this project isn't to make money. My intention is to create a free and easey to use tool for artists/creatives to produce insane work. I'm not opposed to making money, I just don't believe a tool for art creation should be comodified. Although, you need money to by most tools to make art but thats a whole other theortical discusion on art and capitlaism that we don't have time to unpack in this assessment. Not to mention that I have no idea what the legal ramifications are, if any, of taking some opernsource codes and reagraning it to then rebrand it as a product to sell as something else.
+    <br>I'll entertain the idea of 'commercial viability' for a moment. Yes I do think this is a commerical viable product, for a niche market. It wouldn't outpace the like of Adobe Photoshop. However, it may offer an alternative to a specific means to an ends for creatives who want to create something specific and 'random' at the same time. This product would certainly be fare more suprior than the 'glitch' art apps I've experiminet with on my phone. If I were to attempt to sell this product, I would go full Apple and work on designing an elegant user interface. A lot of people like to make art and want to do it in style.
    </p>
    <h2>Skills Required</h2>
-   <p id=para_sets> Do I have the skill to create this right now? What skills are required? How do I plan on gaining those skills? Understanding the formula of each effect in audacity.
-     <br>Programing Languages required for Audacity (based on Audacity github repos): Python, C++, C, Shell, Makefile, HTML
-     <br>Programing Languages required for GIMP (based on information from: https://opensource.com/article/21/1/gimp-scripting): Python Scheme ⇒ Script-Fu (language built into GIMP)</p>
-    <h2></h2>
-  <p id=para_sets> If the project is successful, what will be the outcome?
-    <br>The outcome would be a user-friendly focused program that allows individuals to explore and pursue their creative endeavours.
+   <p id=para_sets><b style="color:#D6FF00">Do I have the skill to create this right now? What skills are required? How do I plan on gaining those skills?</b>
+     <br>I currently posses few programing skills. From what I could assertain form looking at the langueges required to write GIMP and Audacity, I will need to learn who to write a varity of coding languages. I am already on track with my goals to learn these languages but still have a long way to go. I will need to learn more about UX and how to create a will designed program that is easy to use and undertstand. Since I've got an arts background I don't think this would be a much of an issue, but outsouring feedback from people who uses tools like this will offer greate insight for impoving the product.
+     <p><b style="color: #00ff36;">Languges Required for the Project:</b></p>
+     <ul style="list-style-type:square;">
+       <li>Python</li>
+       <li>C++</li>
+       <li>C</li>
+       <li>Shell</li>
+       <li>Makefile</li>
+       <li>HTML</li>
+       <li>Python Scheme -> Script-Fu (language built into GIMP)</li>
+     </ul>
+    <h2>Outcomes</h2>
+  <p id=para_sets> <b style="color:#D6FF00">If the project is successful, what will be the outcome?</b>
+    <br>The ideal outcome would be a user-friendly program that allows individuals to explore and pursue their creative endeavours through the creation of glitch art.
     <br>How will the original problem be solved?
     <br>The original problem will be solved by streamlining the process of databending images that can enable greater accessibility to non-tech-savvy individuals.
-    <br>What is the expected impact this program will have?
-    <br>This development will have an impact on the broader community by enabling them greater accessibility to explore and create imagery that has been databended and also possibly inspire a thirst for knowledge to learn and understand more about how digital images work. </p>
+    <br>
+    <br><b style="color:#D6FF00">What is the expected impact this program will have?</b>
+    <br>This development will have an impact on the broader community by enabling them greater accessibility to explore and create imagery that has been databended and also possibly inspire a thirst for knowledge to learn and understand more about how digital images work.
+    <br>
+    <br><b style="color:#D6FF00">How will it work?</b>
+    <br>Once we create an intergrated sytem that is takes tools from both prorgams. My program shoulld be able to manipulate the data of an image file by converting it into an audio file which enables the user to alter the image by: Copying and pasting segments of the audio file in other places Apply various audio “effects” to the audio file which result in different “glitches”. The user then exports the file and they can select the image format they wish to have it reformatted back into.</p>
+    <br>
     <div id="nabbar_bottom">
       <p>>>> <a href="index.html">Home?</a></p>
     </div>
